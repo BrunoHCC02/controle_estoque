@@ -34,6 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
+        app:hintTextColor="#40A347"
+        app:boxStrokeColor="#40A347"
         android:hint="Insira seu e-mail"
         app:endIconMode="clear_text"
         app:startIconContentDescription="email"
@@ -53,6 +55,8 @@
         android:layout_marginTop="20sp"
         android:hint="Insira sua senha"
         app:endIconMode="password_toggle"
+        app:hintTextColor="#40A347"
+        app:boxStrokeColor="#40A347"
         app:startIconContentDescription="senha"
         app:startIconDrawable="@drawable/baseline_lock">
 

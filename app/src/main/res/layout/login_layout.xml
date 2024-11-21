@@ -24,6 +24,8 @@
         android:layout_marginTop="20sp"
         android:hint="Insira seu e-mail"
         app:endIconMode="clear_text"
+        app:hintTextColor="#40A347"
+        app:boxStrokeColor="#40A347"
         app:startIconContentDescription="email"
         app:startIconDrawable="@drawable/baseline_person">
 
@@ -41,21 +43,24 @@
         android:hint="Insira sua senha"
         app:endIconMode="password_toggle"
         app:startIconContentDescription="senha"
+        app:hintTextColor="#40A347"
+        app:boxStrokeColor="#40A347"
         app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:backgroundTint="#40A347"
         android:id="@+id/btnEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#40A347"
         android:text="Entrar"
         app:cornerRadius="0dp" />
 
@@ -65,14 +70,14 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
-            android:layout_gravity="center"
             android:id="@+id/btnCadastrarSenha"
-            android:textColor="#40A347"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
             android:text="Não possui senha? Cadastre-se"
+            android:textColor="#40A347"
             app:cornerRadius="0dp" />
     </LinearLayout>
 
